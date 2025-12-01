@@ -1,4 +1,5 @@
 .vscode
 liboo/liboo_test
 libexists/libexists_test
+libround/libround_test
 libunrandom/libunrandom_test
