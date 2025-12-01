@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+class Vec2
+{
+    float x, y;
+
+    Vec2() {
+        this->x = 0;
+        this->y = 0;
+    }
+
+    Vec2(float x, float y)
+    {
+        this->x = x;
+        this->y = y;
+    }
+
+    Vec2(int x, int y)
+    {
+        this->x = (float)x;
+        this->y = (float)y;
+    }
+
+    void print()
+    {
+        printf("Vec2: %f, %f\n", this->x, this->y);
+    }
+};
+
+int main()
+{
+    float fx = 1.0f, fy = 2.0f;
+    int ix = 10, iy = 20;
+
+    Vec2 *v1 = new(Vec2);                 // → default
+    Vec2 *v2 = new(Vec2, fx, fy);         // → float_float
+    Vec2 *v3 = new(Vec2, ix, iy);         // → int_int
+
+    v1->print();
+    v2->print();
+    v3->print();
+
+    delete(v1);
+    delete(v2);
+    delete(v3);
+    return 0;
+}
