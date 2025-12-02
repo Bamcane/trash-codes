@@ -58,7 +58,7 @@ interface WeaponBase
     int32 max_ammo = 0;
     int32 reload_timer = 0; // in ms
     int32 ammo_regen = 0; // in ms
-}
+};
 ```
 weapons.ccl:
 ````
