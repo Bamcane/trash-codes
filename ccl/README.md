@@ -61,7 +61,7 @@ interface WeaponBase
 };
 ```
 weapons.ccl:
-````
+```
 #include "weaponbase.ccl"
 
 class WeaponHammer from WeaponBase
