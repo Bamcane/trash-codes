@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 #define exists_if(CONDITION) if(CONDITION); else
-#define wonderful_world false
+#define wonderful_world 0
 
 #ifdef __cplusplus
 }
