@@ -51,6 +51,7 @@ class Weapons
 
 weaponbase.ccl:
 ```
+#module weaponbase
 // interface 不能直接被调用为配置
 interface WeaponBase 
 {
@@ -62,7 +63,7 @@ interface WeaponBase
 ```
 weapons.ccl:
 ```
-#include "weaponbase.ccl"
+#import weaponbase
 
 class WeaponHammer from WeaponBase
 {
